@@ -1,0 +1,467 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- tax
+- licence
+- driving_test
+- faq
+- commisioner
+- minister
+- helpdisk
+- office
+- tax_period
+- additional_tax
+- non_transport
+- transport
+- stage_carriages
+- newly_purchased
+- new_non_transport_vehicle
+- new_transport_vehicle
+- transport_vehicle_other_states
+- add_one_year
+- add_quartely
+- tax_one_month
+- tax_three_month
+- tax_six_months
+- additional_tax_others
+- quartertaxonemonth
+- quartaxthreemonth
+- quartaxsixmonth
+- quartaxothers
+- tax_schedule
+- driving_licence
+- check_criterian
+- learners_validity
+- licence_card
+- eligibility_condition
+- age_sixteen_and_seventeen
+- age_eighteen_and_more
+- age_twenteen_and_more
+- driving_test_conducted
+- subject_driving_test
+- criterian_driving_test
+- test_failed
+- application
+- driving_school
+- forms
+- medical_certificates
+- renewal_duplicate_forms
+- bot_challange
+- application_driving_licence_form
+- application_physical_fitness
+- application_new_class
+- application_motor_registration
+- grant_learners
+- different_other_categories
+- fresh_driving_school
+- renewal_driving_school_licence
+- driving_school_certificates
+- applicant_licence_drive_motor_vehicle
+- authorisation_drive_transport_vehicle
+- intimation_of_loss
+- international_driving_permit
+- fresh_conductor_licence
+- measurement_certificate
+- conductor_medical_certificate
+- eye_certificate
+- learners_medical_certificates
+- renewal_conductor_licence
+- renewal_registration_number
+- duplication_registration_certificate
+- reassigning_registration_number
+- renewal_driving_licence
+- duplicate_conductor_licence
+- did_that_help
+- yess
+- noo
+- help
+- nope
+- thank_you
+- documents_required
+- tax_periods
+- add_one_years
+- add_quartelys
+- licences
+- different_other_categoriess
+- applications
+- formss
+- renewal_duplicate_formss
+- driving_tests
+- helps
+- nopes
+responses:
+  utter_tax:
+  - buttons:
+    - payload: tax_period
+      title: Tax Period
+    - payload: additional_tax
+      title: Additional Tax
+    - payload: tax_schedule
+      title: Tax Payment
+    text: 'Choose one: '
+  utter_newly_purchased:
+  - buttons:
+    - payload: new_non_transport_vehicle
+      title: Non Transport Vehicles
+    - payload: new_transport_vehicle
+      title: Transport Vehicles
+    text: 'Select any one :'
+  utter_non_transport:
+  - text: 14 days from the date of commencement of the quarter(An additional tax shall
+      be paid on belated payments.)
+  utter_transport:
+  - text: One month from the date of commencement of the quarter(An additional tax
+      shall be paid on belated payments.)
+  utter_stage_carriages:
+  - text: 45 days from the date of commencement of the quarter.(An additional tax
+      shall be paid on belated payments.)
+  utter_new_non_transport_vehicle:
+  - text: 14 days from the date of purchase or bringing of the vehicle in the state
+      without prejudice to the period allowed herein above(An additional tax shall
+      be paid on belated payments.)
+  utter_new_transport_vehicle:
+  - text: 7 days from the date of endorsement of tax in the certificate of Registration
+      without the prejudice to the period allowed herein above.(An additional tax
+      shall be paid on belated payments.
+  utter_transport_vehicle_other_states:
+  - text: Before the commencement of the quarter or the date of issue of permit if
+      permit is issued within the quarter as the case may be(An additional tax shall
+      be paid on belated payments.)
+  utter_additional_tax:
+  - buttons:
+    - payload: add_one_year
+      title: One year or more
+    - payload: add_quartely
+      title: Quarterly.
+    text: 'Choose any one : '
+  utter_tax_one_month:
+  - text: 10 % of the tax due for one year or part thereof
+  utter_tax_three_month:
+  - text: 20 % of the tax due for one year or part there of
+  utter_tax_six_months:
+  - text: 25 % of the tax due for one year or part there of
+  utter_additional_tax_others:
+  - text: 50 % of the tax due for one year or part there of
+  utter_quartertaxonemonth:
+  - text: 10 % of the tax due for a quarter or part thereof
+  utter_quartaxthreemonth:
+  - text: 20 % of the tax due for a quarter or part thereof
+  utter_quartaxsixmonth:
+  - text: 25 % of the tax due for a quarter or part thereof
+  utter_quartaxothers:
+  - text: 50 % of the tax due for a quarter or part thereof
+  utter_tax_schedule:
+  - text: Tax payment detail https://web.cdit.org/mvd/sites/default/files/inline-files/taxschedule2016.pdf
+  utter_eligibility_condition:
+  - buttons:
+    - payload: age_sixteen_and_seventeen
+      title: Age between 16 and 18
+    - payload: age_eighteen_and_more
+      title: Age 18 years or more
+    - payload: age_twenteen_and_more
+      title: Age 20 years or more
+    text: ' Choose your age group : '
+  utter_driving_licence:
+  - text: "A valid Driving License, issued under the Motor Vehicles Act 1988, is an\
+      \ essential \ndocument to drive a motor vehicle in any public place in India.\
+      \ \nIn the State of Kerala driving licenses are being issued by the Motor Vehicles\
+      \ \nDepartment through its 17 Regional and 42 Sub Regional Transport Offices.\
+      \ \nOne should have proper authorization in the license to drive \nspecific\
+      \ class/classes of vehicle he intends to drive."
+  utter_check_criterian:
+  - text: "After the Eye test and on submission of the application \nyou will be required\
+      \ to undergo a computer based Learner’s test. \nYour knowledge on Road Rules\
+      \ and Regulations, \nSignals and signs, Road manners, defensive driving etc\
+      \ will be tested. \nFacility for practicing the test is provided in the site;\
+      \ \nand also in the Information kiosk in the office."
+  utter_learners_validity:
+  - text: A Learner’s License, valid for six months and valid throughout India, will
+      be issued to you on passing the test.
+  utter_licence_card:
+  - text: Driving License Card will be send to you within a week.
+  utter_age_sixteen_and_seventeen:
+  - text: If you are between 16 and 18 years you can apply, with the written consent
+      of your parents, for a driving license to drive a Motor Cycle below 50cc.
+  utter_age_eighteen_and_more:
+  - text: If you are 18 years or more, you can apply for a driving license to drive
+      a non-transport vehicle.
+  utter_age_twenteen_and_more:
+  - text: If you are 20 years or more and having one year driving experience in non-transport
+      vehicles, you can apply for a transport vehicle driving license.
+  utter_driving_school:
+  - buttons:
+    - payload: fresh_driving_school
+      title: Fresh Driving School Licence
+    - payload: driving_school_certificates
+      title: Driving Certificate Issued by Driving School
+    - payload: renewal_driving_school_licence
+      title: Renewal Driving School Licence
+    text: 'Choose your category list : '
+  utter_medical_certificates:
+  - buttons:
+    - payload: conductor_medical_certificate
+      title: Conductor Medical Certificate
+    - payload: eye_certificate
+      title: Eye Certificate
+    - payload: learners_medical_certificates
+      title: Learner's Medical Certificate
+    text: 'Choose the category you need : '
+  utter_renewal_conductor_licence:
+  - text: Renewal of Conductor Licence is https://web.cdit.org/mvd/sites/default/files/inline-files/form_clra.pdf
+  utter_renewal_registration_number:
+  - text: Renewal of Registration Certificate for Vehicles  is https://web.cdit.org/mvd/sites/default/files/inline-files/form13.pdf
+  utter_duplication_registration_certificate:
+  - text: Duplicate Registration certificate for vehicle is https://web.cdit.org/mvd/sites/default/files/inline-files/form26_eng.pdf
+  utter_reassigning_registration_number:
+  - text: For reassigning of registration number is https://web.cdit.org/mvd/sites/default/files/inline-files/form27.pdf
+  utter_renewal_driving_licence:
+  - text: Form of Application for the Renewal of Driving Licence https://web.cdit.org/mvd/sites/default/files/inline-files/form9_eng.pdf
+  utter_duplicate_conductor_licence:
+  - text: Application for Duplicate Conductor Licence is https://web.cdit.org/mvd/sites/default/files/inline-files/form_clld.pdf
+  utter_conductor_medical_certificate:
+  - text: Medical Certificate for Conductor's is https://web.cdit.org/mvd/sites/default/files/inline-files/form_mcc.pdf
+  utter_eye_certificate:
+  - text: Eye Certificate for licence is https://web.cdit.org/mvd/sites/default/files/inline-files/eyecertificate.pdf
+  utter_learners_medical_certificates:
+  - text: Medical Certificate for learner’s licence is https://web.cdit.org/mvd/sites/default/files/inline-files/MEDICAL%20CERT%20ENG.pdf
+  utter_faq:
+  - text: What you want to know ?
+  utter_commisioner:
+  - text: Srimati R Sreelekha IPS
+  utter_minister:
+  - text: Shri A K Saseendran
+  utter_helpdisk:
+  - text: 0471-2328799, 0471-2333317/2333337 Extn 666
+  utter_office:
+  - text: "The Head of Office of the Motor Vehicles Department, Kerala is located\
+      \ at Trans Towers,\n Vazhuthacaud, Thiruvananthapuram. \nState Transport Authority,\
+      \ Zonal Office (south zone) and \nRegional Transport Nationalised sector are\
+      \ also functioning in the same building."
+  utter_driving_test_conducted:
+  - text: "Driving test is conducted in two parts. \nFirst part is ground test and\
+      \ the second is road test. \nIn the first part your efficiency in controlling\
+      \ the vehicle will be tested. \nAn 8 track is made for testing part I for two\
+      \ and three wheelers; \nwhile an ‘H’ is made for testing the four wheelers."
+  utter_subject_driving_test:
+  - text: Your knowledge on Road Rules and Regulations, Signals and signs, Road manners,
+      defensive driving etc will be tested.
+  utter_criterian_driving_test:
+  - text: "Holder of a learner’s license for more than 30days can only appear for\
+      \ driving test. \nYou should produce the application along with the learner’s\
+      \ license in \nthe ground mentioned in the learner’s license on the date and\
+      \ time prescribed in it."
+  utter_test_failed:
+  - text: If you fail in the test you can reappear for re-test on any of the coming
+      working days on paying fee of Rs.30/-
+  utter_application_driving_licence_form:
+  - text: To apply for a learner's licence online, the applicant has to visit the
+      Sarathi website of the Ministry of Road, Transport and Highways. The applicant
+      will have to visit the concerned authorities as per test booking slot. https://web.cdit.org/mvd/sites/default/files/inline-files/form3_eng.pdf
+  utter_application_physical_fitness:
+  - text: Application of physical fitness is https://web.cdit.org/mvd/sites/default/files/inline-files/PHYSICAL%20FITNESS%20ENG.pdf
+  utter_application_new_class:
+  - text: Application for new class is https://web.cdit.org/mvd/sites/default/files/inline-files/form8_eng.pdf
+  utter_application_motor_registration:
+  - text: Application for registering Motor Vehicle is https://web.cdit.org/mvd/sites/default/files/inline-files/form20_ml.pdf
+  utter_grant_learners:
+  - text: Application for Grant Learner's is https://web.cdit.org/mvd/sites/default/files/inline-files/GRAND%20OF%20LICENSE%20MAL.pdf
+  utter_fresh_driving_school:
+  - text: For Fresh Driving School form https://web.cdit.org/mvd/sites/default/files/inline-files/form12.pdf
+  utter_driving_school_certificates:
+  - text: Driving Certificate Issued by Driving School or Establishments (for Transport
+      Vehicles only) https://web.cdit.org/mvd/sites/default/files/inline-files/Driving%20Certificate%20ENG.pdf
+  utter_renewal_driving_school_licence:
+  - text: Renewal of Driving School licence [click here](https://web.cdit.org/mvd/sites/default/files/inline-files/form13.pdf
+  utter_applicant_licence_drive_motor_vehicle:
+  - text: Form to Driving Motor vehicles https://web.cdit.org/mvd/sites/default/files/inline-files/form4_ml.pdf
+  utter_authorisation_drive_transport_vehicle:
+  - text: Form for Authorisation issue https://web.cdit.org/mvd/sites/default/files/inline-files/form_lta.pdf
+  utter_intimation_of_loss:
+  - text: Form for Loss/duplicate https://web.cdit.org/mvd/sites/default/files/inline-files/dlld_affidavit.pdf
+  utter_international_driving_permit:
+  - text: Form for International driving permits https://web.cdit.org/mvd/sites/default/files/inline-files/form4a.pdf
+  utter_fresh_conductor_licence:
+  - text: Form Conductor licence https://web.cdit.org/mvd/sites/default/files/inline-files/form_cla.pdf
+  utter_measurement_certificate:
+  - text: Form for Measurement Certificate https://web.cdit.org/mvd/sites/default/files/inline-files/form_mc.pdf
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_default:
+  - text: Sorry I didn't Understand you. Could you please rephrase?
+  utter_yess:
+  - text: Do you want to Know more ?
+  utter_noo:
+  - text: Here is the link to our https://web.cdit.org/mvd/ website for more information.
+  utter_thank_you:
+  - text: Welcome. Have a nice time.
+  utter_documents_required:
+  - text: "1. Proof of address. \n2.Photo. \n3.Proof of age."
+  utter_greet:
+  - buttons:
+    - payload: tax
+      title: Tax
+    - payload: licence
+      title: Licence
+    - payload: driving_test
+      title: Driving Test
+    - payload: different_other_categories
+      title: Others
+    - payload: faq
+      title: FAQ
+    text: Hey there! How can we help you ☺️ ?
+  utter_tax_periods:
+  - buttons:
+    - payload: non_transport
+      title: Non Transport/Contract carriages ordinarily kept in the state
+    - payload: transport
+      title: Transport Vehicles other than contract carriages and the Stage Carriages
+        ordinarily kept in the state
+    - payload: stage_carriages
+      title: Stage Carriages
+    - payload: newly_purchased
+      title: Vehicles newly purchased and registered in the state or brought from
+        outside
+    - payload: transport_vehicle_other_states
+      title: Transport Vehicles of other states
+    text: 'Category of Vehicle are : '
+  utter_add_one_years:
+  - buttons:
+    - payload: tax_one_month
+      title: Within 1 month
+    - payload: tax_three_month
+      title: Within 3 months
+    - payload: tax_six_months
+      title: Within 6 months
+    - payload: additional_tax_others
+      title: Other cases
+    text: 'Choose any one of the above : '
+  utter_add_quartelys:
+  - buttons:
+    - payload: quartertaxonemonth
+      title: Within 1 month
+    - payload: quartaxthreemonth
+      title: Within 3 months
+    - payload: quartaxsixmonth
+      title: Within 6 months
+    - payload: quartaxothers
+      title: Other cases
+    text: 'Choose any one of the above : '
+  utter_licences:
+  - buttons:
+    - payload: driving_licence
+      title: Driving Licence
+    - payload: check_criterian
+      title: Licence Criterian
+    - payload: learners_validity
+      title: Learner's Valididty
+    - payload: licence_card
+      title: Licence card issued
+    - payload: renewal_driving_licence
+      title: Licence Renewal
+    - payload: eligibility_condition
+      title: Eligibility Age
+    text: 'Choose any one of the above : '
+  utter_different_other_categoriess:
+  - buttons:
+    - payload: application
+      title: Application Forms
+    - payload: driving_school
+      title: Driving School
+    - payload: forms
+      title: Licence Forms
+    - payload: medical_certificates
+      title: Medical Certificates
+    - payload: renewal_duplicate_forms
+      title: Renewal/Duplicate forms
+    text: 'Select any one of the category : '
+  utter_applications:
+  - buttons:
+    - payload: application_driving_licence_form
+      title: Driving Learner form
+    - payload: application_physical_fitness
+      title: Physical Fitness form
+    - payload: application_new_class
+      title: Addition New Class
+    - payload: application_motor_registration
+      title: Motor Vehicle Registration
+    - payload: grant_learners
+      title: Grant Learners Licence
+    text: 'Select any one of the category : '
+  utter_formss:
+  - buttons:
+    - payload: applicant_licence_drive_motor_vehicle
+      title: Drive Motor Vehicle
+    - payload: authorisation_drive_transport_vehicle
+      title: Authorisation to Drive Transport Vehicle
+    - payload: intimation_of_loss
+      title: Loss/Duplicate
+    - payload: international_driving_permit
+      title: International Driving Permit
+    - payload: fresh_conductor_licence
+      title: Conductor's Licence(Fresh)
+    - payload: measurement_certificate
+      title: Measurement Certificate
+    text: 'Select any one of the category : '
+  utter_renewal_duplicate_formss:
+  - buttons:
+    - payload: renewal_conductor_licence
+      title: Renewal Conductor Licence
+    - payload: renewal_registration_number
+      title: Registration Certificate Vehicles
+    - payload: duplication_registration_certificate
+      title: Registration Certificate for Vehicles
+    - payload: reassigning_registration_number
+      title: Re-assignment number for vehicle
+    - payload: renewal_driving_licence
+      title: Licence Renewal
+    - payload: duplicate_conductor_licence
+      title: Dup Conductor Licence
+    text: 'Select any one of the category : '
+  utter_driving_tests:
+  - buttons:
+    - payload: driving_test_conducted
+      title: Driving Test Conducted
+    - payload: subject_driving_test
+      title: Subjects for test
+    - payload: criterian_driving_test
+      title: Who Apply Test
+    - payload: test_failed
+      title: Failed Test
+    text: 'Select any one of the category : '
+  utter_helps:
+  - buttons:
+    - payload: yess
+      title: 👍
+    - payload: noo
+      title: 👎
+    text: 'Was this Helpful ? '
+  utter_nopes:
+  - buttons:
+    - payload: tax
+      title: Tax
+    - payload: licence
+      title: Licence
+    - payload: driving_test
+      title: Driving Test
+    - payload: different_other_categories
+      title: Others
+    - payload: faq
+      title: FAQ
+    text: 'Select the Category you want to know about ? :'
